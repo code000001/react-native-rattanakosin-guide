@@ -8,9 +8,9 @@ const AppBottomNavigator = createMaterialTopTabNavigator(
     {
         Home : {screen: HomeScreen},
         Map:{screen: MapScreen},
-        Flash_Sale:{screen: FlashSaleScreen},
+        Flash_Sale:{screen: FlashSaleScreen},  
         Trip: {screen: TripScreen},
-        Profile : {screen: ProfileScreen}
+        Profile : {screen: ProfileScreen},
     },{ 
         navigationOptions: ({navigation}) =>({
             tabBarIcon: ({ focused, tintColor }) => {
@@ -20,7 +20,7 @@ const AppBottomNavigator = createMaterialTopTabNavigator(
                 iconName = 'ios-home';
                 } else if (routeName === 'Map') {
                 iconName = 'ios-pin';
-                }else if (routeName === 'Flash_Sale') {
+                } else if (routeName === 'Flash_Sale') {
                 iconName = 'ios-flash';
                 } else if (routeName === 'Trip') {
                 iconName = 'ios-navigate';
